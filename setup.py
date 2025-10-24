@@ -48,14 +48,6 @@ setup(
     ],
     
 
-    
-    # Entry points for command-line scripts
-    entry_points={
-        'console_scripts': [
-            'tl-sm=tl_sm.main:main',  # Adjust based on your actual module structure
-        ],
-    },
-    
 
     
     # Project URLs
