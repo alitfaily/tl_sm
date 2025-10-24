@@ -1,11 +1,6 @@
 import json
 from typing import Dict, List, Optional, Tuple, Union
-
-#from ConfigSpace import Configuration
 import numpy as np
-#from utils import convert_configurations_to_array
-#from smac.epm.base_epm import AbstractEPM
-#from utils import get_gaussian_process, copula_transform
 from smt.surrogate_models import KPLS, KPLSK, KRG, MixIntKernelType, MixHrcKernelType
 from scipy.optimize import minimize
 from .mixturev2 import MOE
