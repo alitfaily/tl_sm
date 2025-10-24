@@ -45,17 +45,7 @@ setup(
         'scikit-learn>=1.0.0',
         'smt>=2.0.1',
         'matplotlib>=3.4.0',
-    ],
-    
-
-
-    
-    # Project URLs
-    project_urls={
-        'Bug Reports': 'https://github.com/alitfaily/tl_sm/issues',
-        'Source': 'https://github.com/alitfaily/tl_sm',
-    },
-    
+    ],    
     keywords='transfer-learning surrogate-modeling machine-learning deep-learning',
     zip_safe=False,
 )
