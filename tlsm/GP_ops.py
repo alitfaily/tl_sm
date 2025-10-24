@@ -8,7 +8,7 @@ import numpy as np
 #from utils import get_gaussian_process, copula_transform
 from smt.surrogate_models import KPLS, KPLSK, KRG, MixIntKernelType, MixHrcKernelType
 from scipy.optimize import minimize
-from mixturev2 import MOE
+from .mixturev2 import MOE
 from smt.utils.design_space import (
     DesignSpace,
     FloatVariable,
