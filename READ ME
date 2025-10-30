@@ -1,0 +1,70 @@
+# TL_SM: Transfer Learning in Surrogate Modeling
+
+A repository implementing transfer learning techniques for surrogate modeling applications.
+
+## Overview
+
+This project explores the application of transfer learning methods to surrogate modeling, enabling efficient knowledge transfer between related modeling tasks and reducing the computational cost of training surrogate models from scratch.
+
+## Features
+
+- Transfer learning implementations for surrogate models
+- Pre-trained model support for faster convergence
+- Adaptable architectures for different problem domains
+- Performance benchmarking utilities
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/avionat/tl_sm.git
+cd tl_sm
+
+# Install the module
+pip install git+https://github.com/avionat/tl_sm
+OR use your cloned repository
+```
+# Install dependencies (included in setup.py)
+```
+
+## Usage
+
+```python
+# Example usage shown in Jupyter Notebook named Testcase_1.ipynb
+```
+
+
+
+## Requirements
+
+- Python >= 3.8
+- 'numpy>=1.20.0',
+-  'scipy>=1.7.0',
+-  'scikit-learn>=1.0.0',
+-  'smt>=2.0.1',
+-  'matplotlib>=3.4.0',
+
+## Citation
+
+If you use this code in your research, please cite:
+
+```bibtex
+@techreport{Tfaily2025,
+  author = {Tfaily, Ali and Bartoli, Nathalie and Diouane, Youssef and Kokkolaras, Michael},
+  title = {Transfer learning in surrogate modeling with emphasis on aircraft design},
+  institution = {GERAD},
+  year = {2025},
+  month = {July},
+  number = {G-2025-50},
+  pages = {26},
+  url = {https://www.gerad.ca/en/papers/G-2025-50},
+  note = {GERAD Technical Report}
+}
+```
+
+## Acknowledgments
+
+This code is built using multiple packages from: 
+- Saves, P., Lafage, R., Bartoli, N., Diouane, Y., al: SMT 2.0: A Surrogate Modeling Toolbox with a focus on Hierarchical and Mixed Variables Gaussian Processes. Advances in Engineering Software 188, 103571 (2024)
+- Feurer, M., Letham, B., Hutter, F., Bakshy, E.: Practical transfer learning for Bayesian optimization. arXiv:1802.02219 (2018)
+- Wistuba, M., Schilling, N., Schmidt-Thieme, L.: Two-stage transfer surrogate model for automatic hyperparameter optimization. In: Machine Learning and Knowledge Discovery in Databases: European Conference, ECML PKDD 2016, Riva del Garda, Italy, September 19-23, 2016, Proceedings, Part I 16, pp. 199–214 (2016). Springe
