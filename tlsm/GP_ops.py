@@ -292,7 +292,7 @@ class GPops_dev():
                         xcluster = doe[:,0:nx]
                         ycluster = doe[:,nx :nx+1]# in this work, only 1 output is assumed
                         mean = coefficients[model_idx,0]*model.predict_values(xcluster) + coefficients[model_idx,1]#, _ SMT predicts variances using a different function
-                        variances = coefficients[model_idx,0]*model.predict_variances(xcluster) + coefficients[model_idx,1]#, _ SMT predicts variances using a different function
+                        variances = coefficients[model_idx,0]*model.predict_variances(xcluster)# + coefficients[model_idx,1]#, _ SMT predicts variances using a different function
                         if self.weighting_method in ["None", "DISC-PRS"]:
                             discordant_pairs = 0
                             total_pairs = 0
@@ -373,7 +373,7 @@ class GPops_dev():
                                 not_acting = np.atleast_2d(np.zeros(len(Xt[:,0]))).T
                                 Xt = np.hstack((Xt,not_acting))
                     mean = coefficients[model_idx,0]*model.predict_values(Xt) + coefficients[model_idx,1]#, _ SMT predicts variances using a different function
-                    variances = coefficients[model_idx,0]*model.predict_variances(Xt) + coefficients[model_idx,1]#, _ SMT predicts variances using a different function
+                    variances = coefficients[model_idx,0]*model.predict_variances(Xt)# + coefficients[model_idx,1]#, _ SMT predicts variances using a different function
 
                     for i in range(Xt.shape[0]):
                         for j in range(i + 1, Xt.shape[0]):
@@ -527,11 +527,11 @@ class GPops_dev():
                     mean = self.coefs_[raw_idx,0]*prediction + self.coefs_[raw_idx,1]
                 #print(mean)
                     
-                    covar = self.coefs_[raw_idx,0]*self.model_list_[raw_idx].predict_variances(Xt)[:,0]+ self.coefs_[raw_idx,1]
+                    covar = self.coefs_[raw_idx,0]*self.model_list_[raw_idx].predict_variances(Xt)[:,0]#+ self.coefs_[raw_idx,1]
                 else: 
                     mean = self.coefs_[raw_idx,0]*self.model_list_[raw_idx]._predict_values(X) + self.coefs_[raw_idx,1]
                 #print(mean)
-                    covar = self.coefs_[raw_idx,0]*self.model_list_[raw_idx]._predict_variances(X) + self.coefs_[raw_idx,1]# SMT predicts convariances separately
+                    covar = self.coefs_[raw_idx,0]*self.model_list_[raw_idx]._predict_variances(X)# + self.coefs_[raw_idx,1]# SMT predicts convariances separately
                 #print(covar)
                 #print('weight is', weight)
                 #print('mean is', mean)
