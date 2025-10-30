@@ -8,19 +8,15 @@ This project explores the application of transfer learning methods to surrogate 
 
 ## Features
 
-- Transfer learning implementations for surrogate models
-- Pre-trained model support for faster convergence
-- Adaptable architectures for different problem domains
-- Performance benchmarking utilities
+- Transfer learning implementations for surrogate models 
+- Design space clustering
+- Mixture of source model experts
 
-## Installation
-
-```bash
 # Clone the repository
 git clone https://github.com/avionat/tl_sm.git
 cd tl_sm
 
-# Install the module
+# Installation
 pip install git+https://github.com/avionat/tl_sm
 OR use your cloned repository
 ```
